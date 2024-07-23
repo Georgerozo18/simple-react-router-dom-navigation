@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; URL=./">
+    <script>
+        const redirect = () => {
+            const pathname = window.location.pathname;
+            const base = '/simple-react-router-dom-navigation/'
+            if (!pathname.startsWith(base)) {
+                window.location.replace(`${base}${pathname}`)
+            }
+        };
+        redirect();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
