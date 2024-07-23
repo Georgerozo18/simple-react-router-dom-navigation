@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   display: grid;
   place-items: center;
   width: 100%;
@@ -43,11 +48,12 @@ li {
 
 .pageContainer {
   display: grid;
-  place-items: center;
   width: 100vw;
   height: 100vh;
+  justify-items: center;
   align-items: start;
-  align-content: center;
+  justify-content: center;
+  align-content: space-evenly;
 }
 
 .homePage {
@@ -62,6 +68,12 @@ li {
   background-color: #686de0;
 }
 
+.arrayExampleSection {
+  display: grid;
+  row-gap: 1em;
+  justify-items: center;
+}
+
 .contactCardContainer {
   display: grid;
   grid-auto-flow: column;
@@ -73,11 +85,34 @@ li {
   border-radius: 0.5em;
   padding: 1em;
   font-family: "Kalam", cursive;
+  transition: all 0.3s;
+  z-index: 1;
+  display: grid;
+}
+
+.contactCard span {
+  text-align: center;
+}
+
+.contactCard p {
+  filter: blur(1px)
+}
+
+.contactCard:hover p {
+  filter: blur(0px);
+}
+
+.contactCard:hover {
+  transform: scale(1.2);
+  margin: 0 1.5em;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .contactParagraph {
   color: #f5f6fa;
-  font-size: 1.5em;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contactCard p {

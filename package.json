@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Georgerozo18.github.io/simple-react-router-dom-navigation",
   "scripts": {
     "start": "vite",
     "build": "vite build",
