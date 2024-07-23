@@ -7,7 +7,7 @@ body {
   overflow: hidden;
 }
 
-h1{
+h1 {
   font-family: "Kalam", cursive;
   font-weight: 700;
   font-style: normal;
@@ -15,48 +15,72 @@ h1{
   color: #f5f6fa;
 }
 
-a{
+a {
   text-decoration: none;
   color: #f5f6fa;
 }
 
-ul{
+ul {
   list-style: none;
   display: grid;
   grid-auto-flow: column;
   column-gap: 4em;
 }
 
-li{
+li {
   font-family: "Kalam", cursive;
   font-weight: 400;
   font-size: 1.5em;
   font-style: normal;
 }
 
-.navbar{
+.navbar {
   position: absolute;
   left: 50%;
   top: 1.5%;
   translate: -50% 1.5%;
 }
 
-.pageContainer{
+.pageContainer {
   display: grid;
   place-items: center;
   width: 100vw;
   height: 100vh;
+  align-items: start;
+  align-content: center;
 }
 
-.homePage{
+.homePage {
   background-color: #273c75;
 }
 
-.aboutPage{
+.aboutPage {
   background-color: #eb4d4b;
 }
 
-.contactPage{
+.contactPage {
   background-color: #686de0;
 }
 
+.contactCardContainer {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 1em;
+}
+
+.contactCard {
+  background-color: #f5f6fa;
+  border-radius: 0.5em;
+  padding: 1em;
+  font-family: "Kalam", cursive;
+}
+
+.contactParagraph {
+  color: #f5f6fa;
+  font-size: 1.5em;
+}
+
+.contactCard p {
+  margin: 0;
+  padding: 0;
+}
